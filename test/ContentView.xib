@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="test" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FDH-yz-Hsp">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1Q-bm-gYx" userLabel="TopView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                    <viewLayoutGuide key="safeArea" id="qGa-Y4-MlA"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="izK-gj-41S"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="fDw-bO-Xdg" userLabel="LabelView" customClass="TextView" customModule="test" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="200" width="393" height="200"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <viewLayoutGuide key="safeArea" id="sRd-C6-4mF"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBZ-hA-fbY" userLabel="BottomView">
+                    <rect key="frame" x="0.0" y="400" width="393" height="452"/>
+                    <viewLayoutGuide key="safeArea" id="hCY-Xj-fIW"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="4i0-eG-WYV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GDq-w9-R2T"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="tintColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sBZ-hA-fbY" firstAttribute="leading" secondItem="FDH-yz-Hsp" secondAttribute="leading" id="1CT-oV-ePb"/>
+                <constraint firstItem="fDw-bO-Xdg" firstAttribute="top" secondItem="X1Q-bm-gYx" secondAttribute="bottom" id="2Pc-f2-GpF"/>
+                <constraint firstItem="sBZ-hA-fbY" firstAttribute="top" secondItem="fDw-bO-Xdg" secondAttribute="bottom" id="3Tv-72-rqd"/>
+                <constraint firstItem="GDq-w9-R2T" firstAttribute="trailing" secondItem="fDw-bO-Xdg" secondAttribute="trailing" id="5pQ-o9-3EQ"/>
+                <constraint firstAttribute="bottom" secondItem="sBZ-hA-fbY" secondAttribute="bottom" id="AZ6-Vi-B3Z"/>
+                <constraint firstItem="X1Q-bm-gYx" firstAttribute="leading" secondItem="FDH-yz-Hsp" secondAttribute="leading" id="L5s-TL-Qvz"/>
+                <constraint firstAttribute="trailing" secondItem="X1Q-bm-gYx" secondAttribute="trailing" id="sMQ-6v-dft"/>
+                <constraint firstItem="X1Q-bm-gYx" firstAttribute="top" secondItem="FDH-yz-Hsp" secondAttribute="top" id="tHr-bX-061"/>
+                <constraint firstAttribute="trailing" secondItem="sBZ-hA-fbY" secondAttribute="trailing" id="y3O-Or-5YV"/>
+                <constraint firstItem="fDw-bO-Xdg" firstAttribute="leading" secondItem="FDH-yz-Hsp" secondAttribute="leading" id="yI9-uS-Psg"/>
+            </constraints>
+            <point key="canvasLocation" x="-31.297709923664122" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
